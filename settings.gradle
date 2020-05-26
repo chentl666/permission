@@ -1,0 +1,5 @@
+rootProject.name='CTLPermission'
+include ':app'
+include ':permission_library'
+include ':permission_annotations'
+include ':permission_complier'
