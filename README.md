@@ -22,7 +22,17 @@ dependencies {
 
 ## About coding
 ```java
- public void requestPermission(View view) {
+public class MainActivity extends AppCompatActivity {
+
+    private final String TAG = MainActivity.this.getClass().getSimpleName();
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    public void requestPermission(View view) {
         PermissionManager.request(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE});
     }
 
@@ -76,4 +86,6 @@ dependencies {
                 })
                 .show();
     }
+
+}
 ```
