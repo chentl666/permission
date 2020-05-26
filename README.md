@@ -1,6 +1,25 @@
 # permission
 权限管理
 
+## Installing
+```gradle
+allprojects {
+ repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+ }
+}
+```
+and:
+
+```gradle
+dependencies {
+    implementation 'com.github.chentl666.permission:permission_library:1.0.0'
+    implementation 'com.github.chentl666.permission:permission_annotations:1.0.0'
+    implementation 'com.github.chentl666.permission:permission_complier:1.0.0'
+}
+```
+
 ## About coding
 ```java
  public void requestPermission(View view) {
