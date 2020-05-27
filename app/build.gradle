@@ -38,10 +38,14 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation project(path: ':permission_library')
 
-    // 引入注解
-    implementation project(':permission_annotations')
-    // 引入Library
-    implementation project(':permission_library')
-    // 注解处理器
-    annotationProcessor project(':permission_complier')
+//    // 引入注解
+//    implementation project(':permission_annotations')
+//    // 引入Library
+//    implementation project(':permission_library')
+//    // 注解处理器
+//    annotationProcessor project(':permission_complier')
+
+    implementation 'com.github.chentl666.permission:permission_library:1.0.0'
+    implementation 'com.github.chentl666.permission:permission_annotations:1.0.0'
+    annotationProcessor 'com.github.chentl666.permission:permission_complier:1.0.0'
 }

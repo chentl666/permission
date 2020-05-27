@@ -16,7 +16,7 @@ and:
 dependencies {
     implementation 'com.github.chentl666.permission:permission_library:1.0.0'
     implementation 'com.github.chentl666.permission:permission_annotations:1.0.0'
-    implementation 'com.github.chentl666.permission:permission_complier:1.0.0'
+    annotationProcessor 'com.github.chentl666.permission:permission_complier:1.0.0'
 }
 ```
 
